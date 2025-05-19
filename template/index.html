@@ -25,5 +25,7 @@ async function fetchTransactions() {
     const transactionList = document.getElementById('transactionList');
     transactionList.innerHTML = txs.map(tx => `<p>${tx.action} - ${tx.date}</p>`).join('');
 }
+window.onload = fetchTransactions;
+
 
 </script>
